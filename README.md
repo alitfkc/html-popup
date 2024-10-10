@@ -14,6 +14,6 @@ Bu eklenti ile rahatça işlemlerinize  onay ve mail ile doğrulama ekleyebilirs
   
 ## Ekran Görüntüleri
 
-![Uygulama Ekran Görüntüsü](https://ibb.co/ydG6nQm)
+![Uygulama Ekran Görüntüsü](https://github.com/alitfkc/html-popup/blob/main/imgs/img1.png)
 
   
