@@ -1,0 +1,265 @@
+/* Arka planı bulanıklaştıran ve popup'ı saran div */
+.popup-approval-form {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 888;
+    background: rgba(5, 5, 5, 0.2); /* Yarı şeffaf arka plan */
+    backdrop-filter: blur(5px);
+}
+
+/* Popup penceresi */
+.approval-popup {
+    width: 300px;
+    height: 310px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    gap: 13px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
+    
+    /* Animasyon başlangıcı için gizli durumda */
+    opacity: 0;
+    transform: opacity(0.8);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Popup açılırken animasyonu tetikleyen sınıf */
+.approval-popup.show {
+    opacity: 1;
+    transform: opacity(1);
+    animation: scaleInOut 0.7s ease-out forwards;
+}
+
+/* Keyframes ile büyüyüp küçülme animasyonu */
+@keyframes scaleInOut {
+    0% {
+        transform: scale(0); /* Küçük başlangıç */
+       
+    }
+    50% {
+        transform: opacity(0.5); /* Büyüme */
+        
+    }
+    100% {
+        transform: opacity(1); /* Orijinal boyuta geri dönme */
+        
+    }
+}   
+#approval-popup-svg {
+    width: 120px;
+}
+  
+#approval-popup-svg g path {
+    fill: rgb(97, 81, 81);
+}
+  
+.approval-popup-Heading {
+    font-size: 1.2em;
+    font-weight: 800;
+  
+}
+  
+.approval-popup-Description {
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: 600;
+
+}
+  
+.approval-popup-buttonContainer {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+  
+.approval-popup-acceptButton {
+    margin-bottom:10px;
+    width: 80px;
+    height: 30px;
+    background-color: #7b57ff; 
+    /transition-duration: .2s;
+    border: none;
+    color: rgb(241, 241, 241);
+    cursor: pointer;
+     font-weight: 600; 
+    border-radius: 20px;
+}
+  
+.approval-popup-declineButton {
+    margin-bottom:10px;
+    width: 80px;
+    height: 30px; 
+    background-color: rgb(218, 218, 218); 
+    transition-duration: .2s;
+    /* color: rgb(46, 46, 46); */
+    border: none;
+    cursor: pointer;
+    /* font-weight: 600; */
+    border-radius: 20px;
+}
+
+/* Mail Code Popup*/
+
+/* From Uiverse.io by vinodjangid07 */ 
+.popup-mail-code {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 888;
+    background: rgba(5, 5, 5, 0.2); /* Yarı şeffaf arka plan */
+    backdrop-filter: blur(5px);
+}
+
+/* OTP formunun kendisi */
+.otp-Form {
+    width: 260px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    gap: 20px;
+    position: relative;
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.082);
+    border-radius: 15px;
+
+    /* Animasyon başlangıcı için gizli durumda */
+    opacity: 0;
+    transform: opacity(0.8);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Popup açılırken animasyonu tetikleyen sınıf */
+.otp-Form.show {
+    opacity: 1;
+    transform: opacity(1);
+    animation: scaleInOutOtp 0.7s ease-out forwards;
+}
+
+/* Keyframes ile büyüyüp küçülme animasyonu */
+@keyframes scaleInOutOtp {
+    0% {
+        transform: scale(0); /* Küçük başlangıç */
+       
+    }
+    50% {
+        transform: opacity(0.5); /* Büyüme */
+        
+    }
+    100% {
+        transform: opacity(1); /* Orijinal boyuta geri dönme */
+        
+    }
+}
+.mainHeading {
+    font-size: 1.1em;
+
+    font-weight: 700;
+}
+
+.otpSubheading {
+    font-size: 0.7em;
+
+    line-height: 17px;
+    text-align: center;
+}
+
+.inputContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.otp-input {
+    background-color: rgb(228, 228, 228);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 7px;
+    caret-color: rgb(127, 129, 255);
+
+    outline: none;
+    font-weight: 600;
+}
+
+.otp-input:focus, .otp-input:valid {
+    background-color: rgba(127, 129, 255, 0.199);
+    transition-duration: .3s;
+}
+
+.verifyButton {
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: rgb(127, 129, 255);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    transition-duration: .2s;
+}
+
+.verifyButton:hover {
+
+    transition-duration: .2s;
+}
+
+.exitBtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    border: none;
+    color: black;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.resendNote {
+    font-size: 0.7em;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.resendBtn {
+    background-color: transparent;
+    border: none;
+    color: rgb(127, 129, 255);
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.forgot-password-btn {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer; 
+}
+
