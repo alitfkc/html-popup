@@ -60,8 +60,13 @@ function sendForm(code){
   
 
   
-## Ekran Görüntüleri
+## Screen Shots
 
 ![Uygulama Ekran Görüntüsü](https://github.com/alitfkc/html-popup/blob/main/imgs/img1.png)
+
+![Uygulama Ekran Görüntüsü](https://github.com/alitfkc/html-popup/blob/main/imgs/img2.png)
+
+![Uygulama Ekran Görüntüsü](https://github.com/alitfkc/html-popup/blob/main/imgs/img3.png)
+
 
   
